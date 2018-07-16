@@ -1,0 +1,10 @@
+spring:
+  cloud:
+    stream:
+      bindings:
+        input:
+          destination: queue.log.messages
+          binder: rabbit
+        output:
+          destination: queue.pretty.log.messages
+          binder: rabbit
