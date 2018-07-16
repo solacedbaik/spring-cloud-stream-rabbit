@@ -23,7 +23,7 @@ public class MultipleOutputsWithConditionsServiceApplication {
 
     @StreamListener(target = ConditionalProcessor.INPUT, condition = "headers['type']=='bogey'")
     public void routeValuesToAnOutput(Integer val) {
-    	processor.highOutput().send(message("bogey"));
+    	processor.lowOutput().send(message("bogey"));
         processor.lowOutput().send(message(val));
     }
 
