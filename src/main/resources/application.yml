@@ -8,3 +8,5 @@ spring:
         output:
           destination: queue.pretty.log.messages
           binder: rabbit
+server:
+  port: 8888
