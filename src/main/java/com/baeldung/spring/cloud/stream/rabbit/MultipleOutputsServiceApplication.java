@@ -1,7 +1,6 @@
 package com.baeldung.spring.cloud.stream.rabbit;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.stream.annotation.EnableBinding;
 import org.springframework.cloud.stream.annotation.StreamListener;
@@ -14,11 +13,6 @@ import com.baeldung.spring.cloud.stream.rabbit.processor.MyProcessor;
 @SpringBootApplication
 @EnableBinding(MyProcessor.class)
 public class MultipleOutputsServiceApplication {
-	/*
-    public static void main(String[] args) {
-        SpringApplication.run(MultipleOutputsServiceApplication.class, args);
-    }
-    */
 
     @Autowired
     private MyProcessor processor;
