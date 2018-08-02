@@ -11,6 +11,6 @@ spring:
   security:
     user:
       name: admin
-      password: admin
+      password: solace1
 server:
   port: 8888
