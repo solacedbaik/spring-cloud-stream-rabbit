@@ -16,9 +16,11 @@ import com.baeldung.spring.cloud.stream.rabbit.model.LogMessage;
 @SpringBootApplication
 @EnableBinding(Processor.class)
 public class MessageConverterApp {
+	/*
     public static void main(String[] args) {
         SpringApplication.run(MessageConverterApp.class, args);
     }
+    */
 
     @Bean
     public MessageConverter providesTextPlainMessageConverter() {

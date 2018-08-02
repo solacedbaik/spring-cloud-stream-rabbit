@@ -8,5 +8,9 @@ spring:
         output:
           destination: queue.pretty.log.messages
           binder: rabbit
+  security:
+    user:
+      name: admin
+      password: admin
 server:
   port: 8888

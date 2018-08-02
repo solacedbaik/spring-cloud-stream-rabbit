@@ -14,9 +14,11 @@ import com.baeldung.spring.cloud.stream.rabbit.processor.MyProcessor;
 @SpringBootApplication
 @EnableBinding(MyProcessor.class)
 public class MultipleOutputsServiceApplication {
+	/*
     public static void main(String[] args) {
         SpringApplication.run(MultipleOutputsServiceApplication.class, args);
     }
+    */
 
     @Autowired
     private MyProcessor processor;
