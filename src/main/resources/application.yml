@@ -5,6 +5,7 @@ spring:
         input:
           destination: queue.log.messages
           binder: rabbit
+          group: test.group
         output:
           destination: queue.pretty.log.messages
           binder: rabbit
